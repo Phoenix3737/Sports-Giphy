@@ -1,0 +1,16 @@
+body {
+    background-image: url("../image/football-field-slide.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+#graphic {
+    text-align: center;
+
+}
+
+#body {
+    text-align: center;
+    
+}
