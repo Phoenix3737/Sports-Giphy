@@ -1,4 +1,4 @@
-var topics = ["Atlanta Falcons Football", "Atlanta Braves Baseball ", "Mike Tyson", "Georgia Bulldogs SEC Champions", "Georgia Tech Yellow Jackets", "Holly Holm"];
+var topics = ["Atlanta Braves Baseball ", "Mike Tyson", "Georgia Bulldogs SEC Champions", "Georgia Tech Yellow Jackets", "Holly Holm"];
 
 function renderButtons() {
     $("#topics-view").empty();
