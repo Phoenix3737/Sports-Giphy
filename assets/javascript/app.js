@@ -1,10 +1,10 @@
-var topics = ["Atlanta Falcons", "Braves", "Atlanta Hawks", "Georgia Bulldogs", "Georgia Tech Yellow Jackets", "Georgia Southern Eagles"];
+var topics = ["Atlanta Falcons Football", "Atlanta Braves Baseball ", "Mike Tyson", "Georgia Bulldogs SEC Champions", "Georgia Tech Yellow Jackets", "Holly Holm"];
 
 function renderButtons() {
     $("#topics-view").empty();
     for (var i = 0; i < topics.length; i++) {
         var a = $("<button>");
-        a.addClass("topics");
+        a.addClass("topics btn btn-secondary");
         a.attr("data-name", topics[i]);
         a.text(topics[i]);
         $("#topics-view").append(a);
@@ -35,12 +35,13 @@ $(document).on("click", "button", function () {
                 if (results[i].rating !== "r" && results[i].rating !== "pg-13") {
                     var gifDiv = $("<div class='item'>");
                     var rating = results[i].rating;
-                    var p = $("<p>").text("Rating: " + rating);
+                    var p = $("<p>").text("");
                     var sportImage = $("<img>");
                     sportImage.attr("src", results[i].images.fixed_height.url);
                     gifDiv.append(p);
                     gifDiv.append(sportImage);
-                    $("#gifs-appear-here").prepend(gifDiv);
+                    $("#gifs").prepend(gifDiv);
+                    
                 }
             }
         });
